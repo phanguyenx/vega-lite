@@ -21,15 +21,7 @@
       "uuid": "ff30eec6-71be-438b-a065-f4219134ac7d",
       "generated": "2022-09-04T07:30:51.429Z"
     },
-    "dataset": [
-      {
-        "key": "__0__",
-        "name": "Index",
-        "description": "",
-        "type": "numeric",
-        "kind": "column"
-      }
-    ]
+    "dataset": [{}]
   },
   "config": {},
   "data": {
