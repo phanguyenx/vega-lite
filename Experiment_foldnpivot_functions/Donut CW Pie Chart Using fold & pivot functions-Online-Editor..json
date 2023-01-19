@@ -1,0 +1,162 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.4.json",
+  "data": {
+    "values": [
+      {
+        "Region": "Region1",
+        "Segment": "Segment1",
+        "Segment_bingroup": "Segment1",
+        "count": 3,
+        "Segment_bingroup_value": 3
+      },
+      {
+        "Region": "Region1",
+        "Segment": "Segment2",
+        "Segment_bingroup": "All Others",
+        "count": 3,
+        "Segment_bingroup_value": 8
+      },
+      {
+        "Region": "Region1",
+        "Segment": "Segment3",
+        "Segment_bingroup": "All Others",
+        "count": 5,
+        "Segment_bingroup_value": 8
+      },
+      {
+        "Region": "Region2",
+        "Segment": "Segment1",
+        "Segment_bingroup": "Segment1",
+        "count": 10,
+        "Segment_bingroup_value": 10
+      },
+      {
+        "Region": "Region2",
+        "Segment": "Segment2",
+        "Segment_bingroup": "All Others",
+        "count": 8,
+        "Segment_bingroup_value": 15
+      },
+      {
+        "Region": "Region2",
+        "Segment": "Segment3",
+        "Segment_bingroup": "All Others",
+        "count": 7,
+        "Segment_bingroup_value": 15
+      },
+      {
+        "Region": "Region3",
+        "Segment": "Segment1",
+        "Segment_bingroup": "Segment1",
+        "count": 22,
+        "Segment_bingroup_value": 22
+      },
+      {
+        "Region": "Region3",
+        "Segment": "Segment2",
+        "Segment_bingroup": "All Others",
+        "count": 8,
+        "Segment_bingroup_value": 20
+      },
+      {
+        "Region": "Region3",
+        "Segment": "Segment3",
+        "Segment_bingroup": "All Others",
+        "count": 12,
+        "Segment_bingroup_value": 20
+      },
+      {
+        "Region": "Region4",
+        "Segment": "Segment1",
+        "Segment_bingroup": "Segment1",
+        "count": 42,
+        "Segment_bingroup_value": 42
+      },
+      {
+        "Region": "Region4",
+        "Segment": "Segment2",
+        "Segment_bingroup": "All Others",
+        "count": 18,
+        "Segment_bingroup_value": 28
+      },
+      {
+        "Region": "Region4",
+        "Segment": "Segment3",
+        "Segment_bingroup": "All Others",
+        "count": 10,
+        "Segment_bingroup_value": 28
+      }
+    ]
+  },
+  "transform": [
+    {"pivot": "Segment_bingroup", "value": "count", "groupby": ["Region"]},
+    {"fold": ["Segment1", "All Others"]},
+    {
+      "joinaggregate": [{"op": "sum", "field": "value", "as": "total"}],
+      "groupby": ["Region"]
+    },
+    {"calculate": "datum['value']/datum['total']", "as": "Percentage"},
+    {
+      "calculate": "format(datum['Percentage'], '.0%')",
+      "as": "perc_total_format"
+    }
+  ],
+  "facet": {
+    "field": "Region",
+    "type": "nominal",
+    "title": "",
+    "header": {
+      "labelAngle": 0,
+      "labelAnchor": "middle",
+      "labelBaseline": "line-bottom",
+      "labelOrient": "top",
+      "labelFontSize": 14,
+      "labelPadding": -35
+    }
+  },
+  "spec": {
+    "encoding": {
+      "theta": {
+        "field": "value",
+        "type": "quantitative",
+        "stack": true,
+        "aggregate": "sum",
+        "sort": "descending"
+      },
+      "color": {
+        "field": "key",
+        "type": "nominal",
+        "scale": {
+          "domain": ["Segment1", "All Others"],
+          "range": ["#3690c0", "#9ecae1"]
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "arc",
+          "radius": 50,
+          "radius2": 55,
+          "padAngle": 0.02,
+          "cornerRadius": 1
+        }
+      },
+      {"mark": {"type": "arc", "outerRadius": 48}},
+      {
+        "mark": {"type": "text", "radius": 90, "fontSize": 16},
+        "encoding": {"text": {"field": "key", "type": "nominal"}}
+      },
+      {
+        "mark": {"type": "text", "radius": 95, "dy": 15, "color": "gray"},
+        "encoding": {
+          "text": {"field": "perc_total_format", "type": "nominal"},
+          "detail": {"field": "key", "type": "nominal"}
+        }
+      }
+    ],
+    "resolve": {"scale": {"theta": "independent"}},
+    "view": {"stroke": null}
+  },
+  "config": {}
+}
