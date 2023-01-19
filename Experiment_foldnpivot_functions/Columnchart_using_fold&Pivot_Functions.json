@@ -1,0 +1,143 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "deneb": {
+      "build": "1.4.0.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "5.4.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "information": {
+      "name": "Column Chart Using Fold & Pivot Functions",
+      "description": "[No Description Provided]",
+      "author": "Pha Nguyen",
+      "uuid": "7ec79ed2-14ca-49f3-ae05-41924a33eab4",
+      "generated": "2023-01-19T09:42:06.879Z",
+      "previewImageBase64PNG": "data:image/png;base64,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"
+    },
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Region",
+        "description": "",
+        "type": "text",
+        "kind": "column"
+      },
+      {
+        "key": "__1__",
+        "name": "Segment",
+        "description": "",
+        "type": "text",
+        "kind": "column"
+      },
+      {
+        "key": "__2__",
+        "name": "Segment_bingroup",
+        "description": "",
+        "type": "text",
+        "kind": "column"
+      },
+      {
+        "key": "__3__",
+        "name": "count",
+        "description": "",
+        "type": "numeric",
+        "kind": "column"
+      },
+      {
+        "key": "__4__",
+        "name": "Segment_bingroup_value",
+        "description": "",
+        "type": "numeric",
+        "kind": "column"
+      }
+    ]
+  },
+  "config": {
+    "background": "#fff",
+    "arc": {"fill": "#3e5c69"},
+    "area": {"fill": "#3e5c69"},
+    "line": {"stroke": "#3e5c69"},
+    "path": {"stroke": "#3e5c69"},
+    "rect": {"fill": "#3e5c69"},
+    "shape": {"stroke": "#3e5c69"},
+    "symbol": {"fill": "#3e5c69"},
+    "axis": {
+      "domainWidth": 0.5,
+      "grid": true,
+      "labelPadding": 2,
+      "tickSize": 5,
+      "tickWidth": 0.5,
+      "titleFontWeight": "normal"
+    },
+    "axisBand": {"grid": false},
+    "axisX": {"gridWidth": 0.2},
+    "axisY": {
+      "gridDash": [3],
+      "gridWidth": 0.4
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "padding": 1,
+      "symbolType": "square"
+    },
+    "range": {
+      "category": [
+        "#3690c0",
+        "#9ecae1",
+        "#a6bddb",
+        "#74a9cf",
+        "#e2ddf2",
+        "#3e5c69",
+        "#6793a6",
+        "#182429",
+        "#0570b0"
+      ]
+    }
+  },
+  "data": {"name": "dataset"},
+  "width": 150,
+  "height": 150,
+  "transform": [
+    {
+      "pivot": "__2__",
+      "value": "__3__",
+      "groupby": ["__0__"]
+    },
+    {"fold": ["Segment1", "All Others"]}
+  ],
+  "mark": "bar",
+  "encoding": {
+    "column": {
+      "field": "__0__",
+      "type": "nominal",
+      "title": "",
+      "header": {
+        "labelOrient": "top",
+        "labelFontSize": 14
+      }
+    },
+    "x": {
+      "field": "key",
+      "type": "nominal",
+      "sort": "descending",
+      "title": null
+    },
+    "y": {
+      "field": "value",
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "key",
+      "type": "nominal",
+      "sort": "descending"
+    }
+  }
+}

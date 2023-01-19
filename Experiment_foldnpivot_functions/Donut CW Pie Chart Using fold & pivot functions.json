@@ -1,0 +1,224 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "deneb": {
+      "build": "1.4.0.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "5.4.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "information": {
+      "name": "Donut CW Pie Chart Using fold & pivot functions",
+      "description": "[No Description Provided]",
+      "author": "Pha Nguyen",
+      "uuid": "b689f5ca-3dee-4d36-af17-fc3bdd1faceb",
+      "generated": "2023-01-19T09:54:54.266Z",
+      "previewImageBase64PNG": "data:image/png;base64,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"
+    },
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Region",
+        "description": "",
+        "type": "text",
+        "kind": "column"
+      },
+      {
+        "key": "__1__",
+        "name": "Segment",
+        "description": "",
+        "type": "text",
+        "kind": "column"
+      },
+      {
+        "key": "__2__",
+        "name": "Segment_bingroup",
+        "description": "",
+        "type": "text",
+        "kind": "column"
+      },
+      {
+        "key": "__3__",
+        "name": "count",
+        "description": "",
+        "type": "numeric",
+        "kind": "column"
+      },
+      {
+        "key": "__4__",
+        "name": "Segment_bingroup_value",
+        "description": "",
+        "type": "numeric",
+        "kind": "column"
+      }
+    ]
+  },
+  "config": {
+    "background": "#fff",
+    "arc": {"fill": "#3e5c69"},
+    "area": {"fill": "#3e5c69"},
+    "line": {"stroke": "#3e5c69"},
+    "path": {"stroke": "#3e5c69"},
+    "rect": {"fill": "#3e5c69"},
+    "shape": {"stroke": "#3e5c69"},
+    "symbol": {"fill": "#3e5c69"},
+    "axis": {
+      "domainWidth": 0.5,
+      "grid": true,
+      "labelPadding": 2,
+      "tickSize": 5,
+      "tickWidth": 0.5,
+      "titleFontWeight": "normal"
+    },
+    "axisBand": {"grid": false},
+    "axisX": {"gridWidth": 0.2},
+    "axisY": {
+      "gridDash": [3],
+      "gridWidth": 0.4
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "padding": 1,
+      "symbolType": "square"
+    },
+    "range": {
+      "category": [
+        "#3690c0",
+        "#9ecae1",
+        "#a6bddb",
+        "#74a9cf",
+        "#e2ddf2",
+        "#3e5c69",
+        "#6793a6",
+        "#182429",
+        "#0570b0"
+      ]
+    }
+  },
+  "data": {"name": "dataset"},
+  "transform": [
+    {
+      "pivot": "__2__",
+      "value": "__3__",
+      "groupby": ["__0__"]
+    },
+    {
+      "fold": ["Segment1", "All Others"]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "value",
+          "as": "total"
+        }
+      ],
+      "groupby": ["__0__"]
+    },
+    {
+      "calculate": "datum['value']/datum['total']",
+      "as": "Percentage"
+    },
+    {
+      "calculate": "format(datum['Percentage'], '.0%')",
+      "as": "perc_total_format"
+    }
+  ],
+  "facet": {
+    "field": "__0__",
+    "type": "nominal",
+    "title": "",
+    "header": {
+      "labelAngle": 0,
+      "labelAnchor": "middle",
+      "labelBaseline": "line-bottom",
+      "labelOrient": "top",
+      "labelFontSize": 14,
+      "labelPadding": -35
+    }
+  },
+  "spec": {
+    "encoding": {
+      "theta": {
+        "field": "value",
+        "type": "quantitative",
+        "stack": true,
+        "aggregate": "sum",
+        "sort": "descending"
+      },
+      "color": {
+        "field": "key",
+        "type": "nominal",
+        "scale": {
+          "domain": [
+            "Segment1",
+            "All Others"
+          ],
+          "range": [
+            "#3690c0",
+            "#9ecae1"
+          ]
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "arc",
+          "radius": 50,
+          "radius2": 55,
+          "padAngle": 0.02,
+          "cornerRadius": 1
+        }
+      },
+      {
+        "mark": {
+          "type": "arc",
+          "outerRadius": 48
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "radius": 90,
+          "fontSize": 16
+        },
+        "encoding": {
+          "text": {
+            "field": "key",
+            "type": "nominal"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "radius": 95,
+          "dy": 15,
+          "color": "gray"
+        },
+        "encoding": {
+          "text": {
+            "field": "perc_total_format",
+            "type": "nominal"
+          },
+          "detail": {
+            "field": "key",
+            "type": "nominal"
+          }
+        }
+      }
+    ],
+    "resolve": {
+      "scale": {"theta": "independent"}
+    },
+    "view": {"stroke": null}
+  }
+}
