@@ -1,0 +1,194 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "deneb": {
+      "build": "1.4.0.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "5.4.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "information": {
+      "name": "Sliders with customized linear color scheme",
+      "description": "[No Description Provided]",
+      "author": "Pha Nguyen",
+      "uuid": "dea759b2-9c92-4d81-81d9-ec0a3b3495ba",
+      "generated": "2023-02-01T00:35:40.235Z",
+      "previewImageBase64PNG": "data:image/png;base64,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"
+    },
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "a",
+        "description": "Category or ordinal/nominal scale",
+        "type": "numeric",
+        "kind": "column"
+      },
+      {
+        "key": "__1__",
+        "name": "b",
+        "description": "Value(quantitative)",
+        "type": "numeric",
+        "kind": "column"
+      }
+    ]
+  },
+  "config": {
+    "autosize": {"contains": "padding"},
+    "view": {"stroke": "transparent"},
+    "font": "Segoe UI",
+    "arc": {},
+    "area": {
+      "line": true,
+      "opacity": 0.6
+    },
+    "bar": {"size": 20},
+    "line": {
+      "strokeWidth": 3,
+      "strokeCap": "round",
+      "strokeJoin": "round"
+    },
+    "path": {},
+    "point": {
+      "filled": true,
+      "size": 75
+    },
+    "rect": {},
+    "shape": {},
+    "symbol": {
+      "strokeWidth": 1.5,
+      "size": 50
+    },
+    "text": {
+      "font": "Segoe UI",
+      "fontSize": 12,
+      "fill": "#605E5C"
+    },
+    "axis": {
+      "ticks": false,
+      "grid": false,
+      "domain": false,
+      "labelColor": "#605E5C",
+      "labelFontSize": 12,
+      "titleFont": "wf_standard-font, helvetica, arial, sans-serif",
+      "titleColor": "#252423",
+      "titleFontSize": 16,
+      "titleFontWeight": "normal"
+    },
+    "axisQuantitative": {
+      "tickCount": 3,
+      "grid": true,
+      "gridColor": "#C8C6C4",
+      "gridDash": [1, 5],
+      "labelFlush": false
+    },
+    "axisX": {"labelPadding": 5},
+    "axisY": {"labelPadding": 10},
+    "header": {
+      "titleFont": "wf_standard-font, helvetica, arial, sans-serif",
+      "titleFontSize": 16,
+      "titleColor": "#252423",
+      "labelFont": "Segoe UI",
+      "labelFontSize": 13.333333333333332,
+      "labelColor": "#605E5C"
+    },
+    "legend": {
+      "legend": false,
+      "titleFont": "Segoe UI",
+      "titleFontWeight": "bold",
+      "titleColor": "#605E5C",
+      "labelFont": "Segoe UI",
+      "labelFontSize": 13.333333333333332,
+      "labelColor": "#605E5C",
+      "symbolType": "circle",
+      "symbolSize": 75
+    }
+  },
+  "data": {"name": "dataset"},
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "cornerRadius": 10,
+        "size": 15,
+        "tooltip": false
+      },
+      "encoding": {
+        "x": {"field": "__1__"},
+        "color": {
+          "field": "__1__",
+          "scale": {
+            "range": [
+              "red",
+              "yellow",
+              "green"
+            ],
+            "type": "linear"
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "opacity": 0.25,
+        "cornerRadius": 10,
+        "size": 25,
+        "tooltip": false
+      },
+      "encoding": {
+        "color": {"value": "gray"},
+        "x": {"datum": 1}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "tooltip": true,
+        "align": "left",
+        "baseline": "middle",
+        "x": 15,
+        "fontWeight": "bold",
+        "color": "white"
+      },
+      "encoding": {
+        "text": {
+          "field": "__1__",
+          "format": ".0%"
+        }
+      }
+    }
+  ],
+  "encoding": {
+    "y": {
+      "field": "__0__",
+      "type": "nominal",
+      "title": ""
+    },
+    "x": {
+      "type": "quantitative",
+      "axis": null
+    },
+    "tooltip": [
+      {
+        "field": "__0__",
+        "type": "nominal"
+      },
+      {
+        "field": "__1__",
+        "type": "quantitative",
+        "format": ".0%"
+      }
+    ]
+  },
+  "resolve": {
+    "scale": {"color": "independent"}
+  }
+}
