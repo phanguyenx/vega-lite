@@ -1,0 +1,169 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.4.json",
+  "usermeta": {
+    "deneb": {
+      "build": "1.4.0.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "5.4.0"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "information": {
+      "name": "Violin Plot",
+      "description": "[No Description Provided]",
+      "author": "Pha Nguyen",
+      "uuid": "9916ad3d-64a8-4d95-83db-b9693bb07573",
+      "generated": "2023-02-18T09:20:12.768Z",
+      "previewImageBase64PNG": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIwAAAA8CAYAAAC0ClJLAAAAAXNSR0IArs4c6QAAEFlJREFUeF7tXXtwlNd1P+d+36529V49lsUSz8gpFhI0GdoKTzNjRVAGAlYgrloT/+HO2IGAwU6H/OFxZ4JmOq6bIRSEDY4aJ8TjcQ0CyQZMwMIGDG5cu2BjI2GIbPMQRq8ILStptY/vns4Ru3i17Er7+larWpfZYRjud+659/6+c8/rng9hsk2uQBQrgCH6GgDABgC9AGACgCEAGIiC5mTX/8crEAowaQAwBwCMAKACQBsAdF+7ds0cvA7FxcXulpYWJScnRwm3Rna7XZs7d65248aZNMe5fXPTy9afD+7r9Xrpww8/9JSWlo5Kq7i42HvixAkqKSlhUIPdbjfn5OQ4h4aG5CuvvOJ55JFHDCaTSYTjpbi42HPmzBmcMmWKmpmpTuE3wdvv7Qzsz7RKSko8ly9fNqqqGmp9hru3tbV5srKyhmkFPW8oKSkZaG9v5/UL2Xi+M2fOdPP6tre3j1i7Q9cu5fX0a+mP3ndfe2dnp9fhcNyZbyhiflptbW2jzn3atGnOgOfzAIDX0D93XjPe3zEFQ9gFSfRLQkSipWltedmqX59LNO1Y6PX1dcxiwNhybV/G8rxezzz6ZVNu2p9M9//675Ye1msMAJgOAH/jA4kXALoAoNB3qkgAaA43djIBgy1Na+elCmD6+7tsgwBgzbR26LgxUZP++dtHvusizyKLbda22rIylkK6tLw8yO7tBRfA8C/ilkzAiPP715WVP7Trk4i507Fjr6NjeDdsWba7jkgdhx2V9E+bD81WkZ4FgSbFK/e4zI4ju77345uJ5of2/n3mJcW2UVPl6dLqF94NkC58vLLE4eOJ3yeWNiNaMgEzKWHC7Pymo0cz3Kr3YSBZfacLgQkUugAgfm/BjIu1lZX9iQLOF40b5juhfwdK8/7Sh3b+FgDmAYAGAH0AUAIAnwPAVAD4EwBcCxw3mYBJKQljt3fdy7LYmmPlRRm39uRbhx6UglYjQEZoJjBNAh0zacbdW5YsYV0j7kbHH1CvDPz1vR8MfnmtpqYhKiAmEzCTEiZoq59sPriaEB4eCwEaSVUR4v0h6dxWv7jGPlb/sf6/u7s7SxjhZ9LtPVVYOJWPpGKfdOFjiCUNH0WMDf6NOJaSCRjR0rB+XlnNzo/HmlAy/n9goPseXp3CjMKvkjFeqDE2NB98CRGsEY0vKQ012rR9aXXcOmBvf+88lNoOQNpvybL+p0+HyQUAVutY0rEew5Iny/dj85tN8XNJBczFA+vK5lSnhtLrdHbMcoEJcs2542JWb2g+9BQiVUUElq8Vm68EiW3X639/qaGhgSVBTI2I1B6X41vH/3jkek1lTSRHEvuKWCF2JRMwk0cSAGx862AVIayOWLLcZaUgSqI3QCjvuHKsV+sXLPBEi5pfHP9drt1T+M8ezXPyhaUrT/iOJJa0TCvkUeQfI5mAEZ+9sWHufT98/tNoJ6hH/z5n32xAwFxTLlsEurZhKwjdFfEAZQSDQqhExMfHfwu39rrhHlP7lvlLxvTS+mk8eewP84ZQ26GQp3HnopX1AHAfAFh8FhEfTWwPsMef8XEdANqDAcMip9QndthqyPcpO+xO5t9AQkIDZ5rK0v9y7V2AGY/QgKZptilTcrGnx3EjcDMSGRo43NmZ8bmj+wduTVtOQF9bQYgE/AcBgWiUlxZ9CieFDHdIQCEQVJLwUY4RXy7Pn3F9YU5OYAjgztQCQwMPHP+FWqH+7fRes6WjfsECVuUiboHMsrt4Bis2Ptcxn5Gs9PAZ3x0xxTAdiUC0NK1JmdDAjRtXSlVzurkwt/BMvHMLrdAergDQHo/16ImGJwJAvG3NnHZrxt0vJsj8DsVDIGBmAkAmAHzm05Kj4XnMvkSAF5o2zi1dVZcSntXeWx0rBApzbpZ175jMR9khNoU2ykFCdRekAind6Uba/Nz3ln+RAIp3kQgEDAef7vcFnqISU5Ey1tq4tqx01YspAZib9q7tJMhoRKzNTGA8id37BqTtka5JovtJSQJR7N+xeDl7cBPeAgEz229r+7TlhA/W0vjEP1mml++5Z8EaXQAZKcO99o7VAIIdZioQnHDYnfUzZsxIWMwmUodcpPxG2o8IjCDwI4/XvfXFJasS4hUOHtsPGFZ6Z/kcOKyURmKbRzqPO/1amtZtSQfjv85auY1jFuPS+vp7qqQmnwoY3Aggf2fJnrIPEdlhlZD2RPOb5QLpKQCKzDEXx6iIoEgJUkX1FTcYml9YtOjPcZAb9dFACcOOGf531HZ9JMydO7opwzAwcAiANozXsdTR1zHbCOJZwJFxGwSUGmFdQW7B25HMJZo+G985WAWE1UDEL2RCGxEYUIADSJ6WUn1vx+JlZxH9llVCh7pDLBAwUwCAfxf0AM2F158oByl/KVHUzV35/B/0mU54qh3UkWGwQx2iCPnGa5o26CWonZo/tVUP3ja9d9TqHnQtBMAKQCiLaQyBKhAJQLwBUl6VhO+Q2/NVQbrli9rKyoRJx9F48wOG7fzlAFAAAI2+QFRMcwr3UEvj+mok+okG0Fj+o50vJZT4GMR6ezvKQYhngiVL8GNE0ikEvqqA+VR2drZuYp0deS6hlYOQFUBYgSDDRKoBCMEIEocQ6Uuh0HkiwynEoc7r3R5HQ01NzOGBWNc/UMJwcInF5tVE+F0CGeLjSB0YrEMgKyL2oOh9Zk71a7oH/RwOh9XtHViNQkQcsyGiNAI6a0C10eWSrVarVRd9LnB9WN9BQVVIAbElSUYkvCJBOYnCcCrPMtSzecGKcTUWmOdAwLCoZkuJUxYvx4rA4Odu6y6DrPxVDA/olapU8WNpFC+XL9/Jx1/CWyxAuYsJklkS4H3VYNrnGfRcLCwsdCSc0SCCtzPu8FkhtTzNAHvSAN/4VeWKHr3HjYZ+KMcdx1bYJ8OxClaAY75m0tKwvgoUTg4aaSlIjRQQOAiAr2ngfn/+j35zJ1YRDfPBfYePHlU8DATl8dAJfJaIjAJFq/TK05hnOJaHeXHno4zGGyvJmhRVIhOf21Gx7Fai5pEoOoGAyfEpvXxUfNsnffiqRFTXTAbbDmeA49JfaZrrH4iklWMmyBETgLviIQSYBiS6QRHveqVybMg0s6OofGVYKy3cNROTSSlVDOIhQDGPRonN+C0IvsEQbgGR4zwA/MNAWlJKkyrUzwXC2x4Pnvr000879bhm0jR0Pf9q+80Hniwp26/jNZOY8RMImHsA4DsAcNyXABwVUbaCSNNYV2ArIKwSF4ooIRhAggtRXtTQcJgM2rl5y3dF5Ejru9X9mCT6Ohc2Kq6j78w6jqqopx125wvFxcUJV4wf/agp19yVtnDXkmVJtyQjWQ0/YPjvbF8CMOsvES0E6ydK/0AVIlYHHzuRDB4SPOxbQOgAwlNShZMZcrBn1srdIR19PTc7qoUQj8U6VhzPqV7pOmy1TNsRB42Qj/78+HHbkNOZt2PZMl3M+3j5jSkfpq1xrdVNuBoQIrY+omYUUZAkLypwEQn2uCnj2vxVW0a4u4cdcSie9aUVRj1EPA940fPv1uyi0/HQCPXs2rf3FmV4zVm/WrKCg8Ap14KVXg6RswJ6130U5jwpQAm1RAgmkHQWhXfvTY+99f6ahjs5H7e9t/A4oIjNGRbFliAnFRFcAQVfzc0seBcRE+4HWX+sMT9NE+lbl/xwxPWOKNjUtWuwDnMvAHzgS5oaMXBL0/oqpBExGF0ZC6PrmIDov0pXvrgbcSSoOUZEXslZ+HrEbhQg6NdQNqqS3rdYpibM7RA8TwYMaSJ95wQADJvS7Ic5Gyo0cKFx3eME9GDSURIwICvH5IUP51LlZgzj5UwwcBSQ5CIFDxnA9EZ2drbuPpGNzQemS+lOf37JQxPiSOJbb8xoSL/IbSlDq5MRgQ0CpoKEAwTavkGNjiyoqR/TFxIPcIhIQUAHCWw2oulAZmZmt8/c1v19mUgShgOPnKbJ6Q3srAvbGDgAshppOJSgW+NoLCBeFgqcEcLb9Bcr6qN+w33pDI9HqBhzxN5DiAfThDyQkWHtShZQ/Iu48a1993qEwbxrUfz3j/TYmECzmosIsYThJPCIKhoM+15IqwJKnLVEgAoO34GhsxrSES+YPv5OnPkzHKk23oJqX9JUyHVkhZYI3vGYqMGaZr2SyNyYaDZuokgY9nxyAjhfMbgYreNuOLjYP1CNAh8ECsiOj2KlEFCVxKEI+qOmKIcsbkPbtJr/CJkBHwXZEV3Dm+GShIBtbqf4IBnBxtH4Zx0GFTJv/34170PKNb+E4dJkHK3mDWL9gMME7K3lf0ccS4oNOIjAPnvSTglVeaszq+CTyspa3XI7huNNyrDvxt9Ut/TsslmKDqTC7kwUCcMpmmwh8d8cfOQbBKzTsJ8hqlgSLzrHkzx9F5YjuWtGiyUBO+dAeQ9U09GrSvG56dO/T6OVP0tUybLZ3572FEmoZF5RiBbpHtrmdA7X9INE3ksKB8BRS5b9+Vqew96f/vBsXUuWxfxuxOTpjXQ0dvS5QPwMgUY41QiEKojaAPFVVJzn51T/VvfUgUCeOf3BI50vEZGZkJ4pyLH9T6Rz0rvf+jffnIGqND8/ATy9uq3FcLYdyNsxH0RFA9iPxsE3y36wOyLlWg/Geuwd/0IA+ap01loss8YtKT14bhPlSNJjT0bQbGlc928saRC08+nO/l/O+PGrEUWj9WKsq/fGUkVgdn6ubY9eY8RCl81qFAbz9hQ3q2OZW1TPtO7/aQUqcrOXzM+Vr9zGFQPGtd3svzkf0avmZuhzVTbWyU1KmICV+6Rx7e6ZFtum7MrNUTvgYt2AcM+1Xv7fqTmGqWpRUVFKBfnWnXx9Gg1i+q6lqW1WJ3o/QtI7v3/NupOf2F5eX1ure2L1WBMaGOie6sQhUZA+jctZpEz7yfGDBeCl9PrFD3Iyfso1Xa2k4Nm2vra2rPQfU+NudVd/F3u2U65O7+SRFICaz/Y+NmtOzW/GpURYMHhTtbDzJGBSTqhOMhTPCoQ6kjiuxIWE+MYAe3q5fFXE5bDiYWby2dRfgXA6DEetuRI0p2peqquru2Wz2bIXLlw4QlmN5msmY33dI5avmbS2thbk5OTY8/PzXdF+zSTc1sQbGjh79qylt7d3cNGiRWFr+I8WGgjkK9WvmYSFd11dXZrb7bZt2rTpSiq9A1u2bJmRlZX11Zo1a3SpOBHLXLdu3VrkcrkGn3766XF1TMbCeyTPJMtK4oqMfMTxbUp/JDrsBxAiYTyOPjznIl8NHP9RO2a50TjGi+ZRrmTJSVz+moKjlkCNhnCi+iYLMJzJx+XJ+YjjlAn/x5w4B4drsiQ072WMxeFUDq5Swbcb2bRm0DCgOVLPxwjzwhVF2bnI2YfJ1N84Y4DTSvxfxOMYF6ea+D/i1ZJkfu5aymQBJlEATxadO5WvkzXgRBlnEjATZadShM9JwKTIRkwUNiYBM1F2KkX4nARMimzERGHjmwgYnvN3fZYQR6rZhGUrhM1+NmvZf8KFfPjfbJXolpA+UUASyOc3FTDfAoDFcLvIEd+S4FInnC7K/phpPtCwic2fAh71Ut9E3PR4eP4mAsa/XuyPYR8HlxBhn8xki2AF/g83tzCvG/gJWwAAAABJRU5ErkJggg=="
+    },
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Index",
+        "description": "",
+        "type": "numeric",
+        "kind": "column"
+      },
+      {
+        "key": "__1__",
+        "name": "Species",
+        "description": "",
+        "type": "text",
+        "kind": "column"
+      },
+      {
+        "key": "__2__",
+        "name": "Flipper Length (mm)",
+        "description": "",
+        "type": "numeric",
+        "kind": "column"
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "continuousWidth": 400,
+      "continuousHeight": 300,
+      "stroke": null
+    },
+    "facet": {"spacing": 0},
+    "font": "Segoe UI",
+    "arc": {},
+    "area": {
+      "line": true,
+      "opacity": 0.6
+    },
+    "bar": {},
+    "line": {
+      "strokeWidth": 1,
+      "strokeCap": "round",
+      "strokeJoin": "round"
+    },
+    "path": {},
+    "point": {
+      "filled": true,
+      "size": 75
+    },
+    "rect": {},
+    "shape": {},
+    "symbol": {
+      "strokeWidth": 1.5,
+      "size": 50
+    },
+    "text": {
+      "font": "Segoe UI",
+      "fontSize": 12
+    },
+    "axis": {
+      "ticks": false,
+      "grid": false,
+      "domain": false,
+      "labelFontSize": 12,
+      "titleFont": "wf_standard-font, helvetica, arial, sans-serif",
+      "titleFontSize": 16,
+      "titleFontWeight": "normal"
+    },
+    "axisQuantitative": {
+      "tickCount": 3,
+      "grid": true,
+      "gridDash": [1, 5],
+      "labelFlush": false
+    },
+    "axisX": {"labelPadding": 5},
+    "axisY": {"labelPadding": 10},
+    "header": {
+      "titleFont": "wf_standard-font, helvetica, arial, sans-serif",
+      "titleFontSize": 16,
+      "labelFont": "Segoe UI",
+      "labelFontSize": 13.333333333333332
+    },
+    "legend": {
+      "titleFont": "Segoe UI",
+      "titleFontWeight": "bold",
+      "labelFont": "Segoe UI",
+      "labelFontSize": 13.333333333333332,
+      "symbolType": "circle",
+      "symbolSize": 75
+    }
+  },
+  "data": {"name": "dataset"},
+  "height": 250,
+  "width": 200,
+  "transform": [
+    {
+      "filter": "datum['__1__'] != null && datum['__2__'] != null"
+    },
+    {
+      "density": "__2__",
+      "extent": [165, 240],
+      "groupby": ["__1__"],
+      "as": ["__2__", "density"]
+    }
+  ],
+  "mark": {
+    "type": "area",
+    "orient": "horizontal"
+  },
+  "encoding": {
+    "color": {
+      "field": "__1__",
+      "type": "nominal",
+      "scale": {
+        "scheme": "brownbluegreen"
+      }
+    },
+    "column": {
+      "field": "__1__",
+      "header": {
+        "labelOrient": "bottom",
+        "labelPadding": 0,
+        "titleOrient": "bottom"
+      },
+      "type": "nominal"
+    },
+    "x": {
+      "axis": {
+        "grid": false,
+        "labels": false,
+        "ticks": true,
+        "values": [0]
+      },
+      "field": "density",
+      "aggregate": "sum",
+      "impute": null,
+      "stack": "center",
+      "title": null,
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "__2__",
+      "type": "quantitative"
+    }
+  }
+}
