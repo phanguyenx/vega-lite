@@ -1,0 +1,179 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "deneb": {
+      "build": "1.5.1.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "5.6.1"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": true,
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "information": {
+      "name": "Overlapping Bar Chart with Patterns",
+      "description": "Copy and Paste",
+      "author": "Pha Nguyen",
+      "uuid": "8bf2bce6-2b3c-42fa-91bc-7522b9589599",
+      "generated": "2023-09-28T08:46:12.114Z",
+      "previewImageBase64PNG": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAABDCAYAAACVxUd9AAAAAXNSR0IArs4c6QAADEhJREFUeF7tnWtwU8cVx//3WrKu5IeM3wZjwPFLYAO2k0k7pcQOBEMDnTY8AjRtZpjp0AcBZzKZdhj6gU/MwKeGD51+KNOZEohxICGUR1NeKTGPAZtHMCF+yfgB2BZ+4ocsyeqcvb62ZEnYliVbNrtfwPfu3Xvu7k9nz+6ePSv09vbawROvAR/WgDCToaqqqsLJkyeh0WiwceNGxMXF+azqysrKYLVakZKSgmvXrmHVqlVQq9WsfOW9Wq0WmzZtQnR0tNN7T506hcTERGRnZ7vIc+HCBWRmZvpUVp999BgLmtFQUWMfPnwYW7duxY0bN5CWloaamhoEBQWhoqKCARETE4Pz589j9erVLE93dze2bdsGaniCISMjA0VFRew+3bt//z4KCwthsVhw9OhRLFmyBI2NjWhoaGD5t2/fjtLSUpw7dw7x8fGYP38+mpqaEBUVhbCwMHa9trYW69evR0lJCQYGBph8xcXFkCSJ3Zs9ezb27NkDvV4/xmYMrGwvBVTvv/8+a9APP/wQBw4cwOXLl7F8+XIcO3YMlZWV7F5SUhIiIyMZZCqVCidOnMCKFSsYRF1dXUyzmM1m1nofffQRe2bfvn2or6/Hli1bcOjQIQYeAXLz5k0GMwFpt9shCAIrl8rR6XQManpvfn4+bt++zTQeAU0QJSQksDLoBzBd04yHav/+/azxnj9/DpvNhoiICPT19aG5uZmBQdeoewwNDR1qfLpGXRhBRF1ma2srg4KeMxqN2LFjBwwGA+taScsRtKdPn0Z/fz92796Ne/fugd5Lz+Tl5eHixYvo7e3FunXrcOnSJVbOsmXLcObMGfbOzZs3sy6UwCWgSdZdu3YxmaZjmtFQeWqQgwcPoqCgYEq1AXWXR44cYV3n3r17GewzJb2UUM2UxgvU72BQkbolNUyGKI1gwsPDWb/PE68Bb2qAQUUqmEYhNEoheyI2NhYLFizwpjz+DK8B8O6PQ+DzGuBQ+bxKfVNgX9UfAQy4LUxK+ZtvXuKnUjhUfqrYiRZLUNktLS7FCEFhkNL+MdHi/fo8h8qv1et94YEG1fXrj1FnfOzxg1YWLEFkpLxM5TT6o5ldMtj56M97GHz1ZCBCFdbzCeZEN7p84pUf3sVPVhQ4Q6WM/h4/lknkoz9foeF9Od5A9bTJjDul1R5fGpcQj+zsSK+EIk1FUCUn1Lg8f/7+b1yh8uot/CG/1oC3UN0t+QoL51xykc3UEQ3EFI4bKnPdXlbWrfJ5iFDfQXJ8xXDZQfIyEofKryj4rvCJQLXcUOwiyMP6DK+g6qv6A+wWE25V5GKWrgHJ8T/IZQsChCDZi4JD5bt292tJ/oJqaZbwQrkF1Syn+xwqvzbz5BbuL6iWZLTCXLubfcw3d3/q9FGiNBeiNmPo2sqCDHgNlbL2R+t/5L5BLiF87W9yIRr5NgWq21VLnW4JogRV7K+HriUnRyAqSh7Kk6FONtWLuj9HqL4s+Tl+lH5+qCxBVAOCxP6+/Xgbfrkh23uolNEf+Q319PQwj0W+9hcYUJVW5iBM89RBGLJldOzvurbX8eM310wIqjW5nyFY1S+bSaIGELXo7gvBleqdE4NqaqtPfrvV9LlHMVTRGwJBRBcZLM2fwtb2H7eyBSd+DDEky2u5FU1FUOm1jXhFMZAhQFDJBvKF++9xqF5Uw+bqXRjof+KSRRB1kNL/6XXj+PNBgsr67KTbV2iS/jJpUIXbimDrvIamtih8Xx2D5ZmnHbo0HSCooIz+RnZ/M1pTjQcqS8tRz405dzfEkMX+ZGmo7ECCyvrsKzS3x+FBbTLeyDw7DBXNJXGonHlwp6kYVKYvPGiIPRyqQIAqEDw/x62pAgiq5vZYlFU6j9JEbTrIo4BS4vy5yMmJGpf2HI9NRd1fwGkqZfRHe9loGxEtKE/26G+6Q1Vem4Kc5KsO3Y5syzxpTcBAVCGWLuyA2fhnt2CpZr0Fdfxvne5Ne6jG9RPyU+aZAFVe5hkXW+aHhnQOlZ+YGbXYQIHK0nzYo6zq2Pec7imGOnV/pKk4VA7+VKO2+CRkCBSo+qo/gL2/CWWVOWg0JQx/uRAEUWcY+jtvZRb0tmI2CuVQBajrSyBCFSY9xpyoukGQaNIxnP3/WuU7eD1/DYcq0L0UvIGqpSMGdrvzqntwwnaI2uE4BHFxmnHpWUdNRVClJDx0gEqeyb5Y/isO1WiuL9N1SoGgul+TBgjDIbZEdfTQomjM/Dzk5jqH8RmNsMmA6utbK53EEILjIGiG91mu+8ViTPvRnzKlYDKZ2MfSvv6pmlLotwY7V7iohZT6d+drHUVs8lOBKi/LYVlicAa5oiEN1sjCgITqZMk6vJH57+GRohgMiLJ3wFXj7/HOxpzpD9Vov97JuK90f7ersvGoKdHhlSIETdLQ3yvWvI4I+/FpD1VBTjE06j72XQKDSse8A/5X9QGHylfAOUIVEtyE1NkPXGyZS+Vb8VrezzhUI7wUAnJG3VdgTKQcDhXXVBPhx+2zkwHV50WlHuUmr9f1m3IwGYY62VQzvvujNb8nT55AFEUWPpAqeNYsZwd4x9ZoaenH12fveGygNMMCvPZazLjAmwyoij8rxQrDJy5y0bTE5YqdHCpfen7SIjKFBySQaORHu5TT09M9QkFQ3fzmNN4wFLnkqX7yCsz6woCFaqXhr5CCZQNZST1mHYdqqtyJ7dY21g4tJhtufXsZ+YtGQiWgsjGVQ0UNNDi14W5B+aXo/sbaT1lbimAxHYepMxr3qjKQv9hhrmWwEhWochf3wPLUfXQSMXg21Am/c3qtv7q/7EVdsLbKcn753yS8tfhfzppK1IFrqinc+DBeqMw1H7vlVRXx5qRCZTb+icnx1dW1eCv7OCR1r9P8EIeKQzWueSrSVByqKdj4QHE+Ka44/fui0Z+3mur7umGXEVIRQSFZCJq1ekiLZS4KhT+7Pw7VFEDV3t7OTh4ICQlhI0BPoz9voTp17W3Mi1VW+ym2g3porauuswAb3s3lUL2syzQTgWrlkhOQgp1tmd5+LS4+3MmhepnX/jhUvvGn4lMKDuM3DhWHyufxqThUHKpxQUWnPVAgWTr40NPaH4eKQzVmqDo7O3H9+nV20CFtJPXH6I8b6sObSblNxW0qF2fBiW584FBxqDhU/gwky20qblON2abyl5eCsqBMM+rcpnrJbKqxen5yTcU11Zg1FR0a/fDhQ3YyOUUm5qM/OZaCv3Yoc0OdG+rcUOeGuhzjUtmhzP2pAjzmJ7epuE01ZpuKj/74bhpiwOfB+Ts6OpiBTnv/6F93+/64puKaalyaqr6+Ht3d3WxBua+vz+2+P4LKjgGY2iRcuDIi7pMgQQjSMqWXtjAFtJvG1ikHVv3inB79sm/9UFJOa9JIwcxJj8JYUyr7To9Ko/u8dHXV27nMR51SS6uEi9+OkEPUgs5voZSRmQqyqWxd12U5zurRb3FftqTVsM2kihyl3+lR9QI5CtbmQj8gy9H8TMKlEs9yGLLSWCBZW9cNlv/EWT0sHuTQ6jQsQIcix817etTUeq6P1WtfRfiAfFpGk0mLy1edo+bQsSBKfSxcnA4Kzm97fpPlP34mAlbrcBgmpq0GT9HShUjsGJEhOe6Go+aRcywwxxO31qx71flkUmeRR/9rYMDO/NmtVhs0mhEfMfi4KA4L0NbWAVq0njs3ET09vdDpZPiU5JjXYrGira0dKpUKERGyZhiZlPwkh9ncP3hIk3ygoae8dL2jowtms5lNm7iT21EOpWyVKsjj4U+OclD5yreN9o29veYxy0zf9+hRHebNS4JaLcfUfFF9tLd3MHnDwkavD6rrhoZGdhYRfefI9nSsD5LDaKxFUlISJMl9IDklv9cHc1Msq4qKCqbVoqOjkZqayrScu0Txr+ggpfLycsTFxbHYV/Qh7hLNmd25c4d1wdQlJycnIy0tjXXL7hJp2OrqaoSGhjIfe9pZ7SkvyVFWVgZJkpgclLKyspirz8hEP5qGhgY8e/aM5ac5vEWLFrmVgS4SrFQflI/qgerDU1JkjoyMBB0yRXnnzJnjNjtNTD948IC5JVF9kBdJZmYmk8ldqqyshNFoZD8ckiMxMZG1j7tEPRPVHbVNTEwM9Hq9x7yUp66uDm1tbUxBULkGg8FtXXsNlccam4Ibsta0QqMZeyhGaiw6ho5AnMpEu5hIhrHI4c13TsW3/R/8i6pY/UJtZQAAAABJRU5ErkJggg=="
+    },
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "id",
+        "description": "Any column or measure can be added to make this Power BI—Deneb-Vegalite template work.",
+        "type": "text",
+        "kind": "column"
+      }
+    ]
+  },
+  "config": {
+    "autosize": {"contains": "padding"},
+    "background": "#F7F7F7",
+    "axis": {
+      "domain": false,
+      "ticks": false,
+      "title": true,
+      "grid": false,
+      "labelAngle": 0
+    },
+    "view": {"stroke": "transparent"}
+  },
+  "data": {
+    "values": [
+      {
+        "Month": "Jan",
+        "Expenses": 735,
+        "Budget": 812
+      },
+      {
+        "Month": "Feb",
+        "Expenses": 724,
+        "Budget": 601
+      },
+      {
+        "Month": "Mar",
+        "Expenses": 1365,
+        "Budget": 945
+      },
+      {
+        "Month": "Apr",
+        "Expenses": 1316,
+        "Budget": 1016
+      },
+      {
+        "Month": "May",
+        "Expenses": 720,
+        "Budget": 842
+      },
+      {
+        "Month": "Jun",
+        "Expenses": 1139,
+        "Budget": 1102
+      },
+      {
+        "Month": "Jul",
+        "Expenses": 1380,
+        "Budget": 1230
+      },
+      {
+        "Month": "Aug",
+        "Expenses": 1219,
+        "Budget": 1002
+      },
+      {
+        "Month": "Sep",
+        "Expenses": 1735,
+        "Budget": 1416
+      },
+      {
+        "Month": "Oct",
+        "Expenses": 1482,
+        "Budget": 1454
+      },
+      {
+        "Month": "Nov",
+        "Expenses": 1345,
+        "Budget": 1585
+      },
+      {
+        "Month": "Dec",
+        "Expenses": 1568,
+        "Budget": 1655
+      }
+    ]
+  },
+  "title": {
+    "text": "Expenses Vs Budget",
+    "anchor": "middle",
+    "offset": 5,
+    "font": "Tahoma",
+    "fontSize": 20
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "tooltip": true,
+        "xOffset": -6,
+        "height": {"band": 0.5},
+        "color": "#eeca3b",
+        "opacity": 0.9
+      },
+      "encoding": {
+        "y": {
+          "field": "Expenses",
+          "type": "quantitative",
+          "axis": {
+            "grid": false,
+            "format": ".2s",
+            "offset": 10
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "tooltip": true,
+        "xOffset": 6,
+        "height": {"band": 0.5},
+        "opacity": 0.9,
+        "fill": "url(#dots-4)",
+        "stroke": "#6b6ecf"
+      },
+      "encoding": {
+        "y": {
+          "field": "Budget",
+          "type": "quantitative"
+        },
+        "strokeWidth": {"value": 2.5}
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Month",
+      "sort": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Oct",
+        "Dec"
+      ],
+      "scale": {"padding": 0.4}
+    }
+  }
+}
