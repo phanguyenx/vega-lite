@@ -1,0 +1,306 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "deneb": {
+      "build": "1.5.1.0",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "5.6.1"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": true,
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "information": {
+      "name": "Bar Chart with Tadpole/Arrow Variance",
+      "description": "[No Description Provided]",
+      "author": "Pha Nguyen",
+      "uuid": "612abf32-14cd-4b48-827a-4a2dbfae3447",
+      "generated": "2023-09-30T09:12:18.676Z",
+      "previewImageBase64PNG": "data:image/png;base64,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"
+    },
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "id",
+        "description": "",
+        "type": "text",
+        "kind": "column"
+      }
+    ]
+  },
+  "config": {
+    "autosize": {"contains": "padding"},
+    "background": "#F7F7F7",
+    "padding": {
+      "top": 20,
+      "bottom": 20,
+      "left": 20,
+      "right": 20
+    },
+    "view": {"stroke": "transparent"},
+    "font": "Tahoma",
+    "axis": {
+      "ticks": false,
+      "labelFontSize": 13,
+      "labelColor": "black",
+      "title": null,
+      "domain": false,
+      "grid": false,
+      "labelAngle": 0
+    },
+    "axisX": {
+      "domain": false,
+      "gridOpacity": 0.5,
+      "tickCount": 8,
+      "labelPadding": 5,
+      "labelAngle": 0,
+      "labelFlush": false
+    },
+    "axisY": {
+      "domainColor": "#433828",
+      "domainOpacity": 0.3,
+      "labelPadding": 15
+    },
+    "legend": {
+      "orient": "none",
+      "direction": "horizontal",
+      "symbolSize": 200,
+      "symbolStrokeColor": "transparent",
+      "labelFontSize": 12,
+      "labelColor": "#433828",
+      "titleOrient": "left",
+      "titlePadding": 10,
+      "titleFontSize": 13,
+      "titleFontWeight": "normal",
+      "titleColor": "#433828",
+      "legendX": 192,
+      "legendY": 110
+    },
+    "rect": {
+      "align": "left",
+      "width": 52,
+      "height": 4,
+      "color": "black"
+    },
+    "line": {
+      "size": 2.5,
+      "color": "#9EDCDD"
+    },
+    "circle": {
+      "size": 250,
+      "opacity": 1
+    }
+  },
+  "data": {
+    "values": [
+      {
+        "Month": "Jan",
+        "Expenses": 735,
+        "Budget": 812
+      },
+      {
+        "Month": "Feb",
+        "Expenses": 724,
+        "Budget": 601
+      },
+      {
+        "Month": "Mar",
+        "Expenses": 1365,
+        "Budget": 945
+      },
+      {
+        "Month": "Apr",
+        "Expenses": 1316,
+        "Budget": 1016
+      },
+      {
+        "Month": "May",
+        "Expenses": 720,
+        "Budget": 842
+      },
+      {
+        "Month": "Jun",
+        "Expenses": 1139,
+        "Budget": 1102
+      },
+      {
+        "Month": "Jul",
+        "Expenses": 1380,
+        "Budget": 1230
+      },
+      {
+        "Month": "Aug",
+        "Expenses": 1219,
+        "Budget": 1002
+      },
+      {
+        "Month": "Sep",
+        "Expenses": 1735,
+        "Budget": 1416
+      },
+      {
+        "Month": "Oct",
+        "Expenses": 1482,
+        "Budget": 1454
+      },
+      {
+        "Month": "Nov",
+        "Expenses": 1345,
+        "Budget": 1585
+      },
+      {
+        "Month": "Dec",
+        "Expenses": 1568,
+        "Budget": 1655
+      }
+    ]
+  },
+  "title": {
+    "text": "Expenses Vs Budget",
+    "anchor": "middle",
+    "offset": 5,
+    "font": "Tahoma",
+    "fontSize": 20
+  },
+  "transform": [
+    {
+      "calculate": "datum['Expenses'] - datum['Budget']",
+      "as": "abs_diff"
+    },
+    {
+      "calculate": "(datum['Expenses'] - datum['Budget'])/datum['Budget']",
+      "as": "rel_diff"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "xOffset": -5,
+        "width": {"band": 0.8},
+        "color": "#386cb0",
+        "opacity": 0.75
+      },
+      "encoding": {
+        "y": {
+          "field": "Expenses",
+          "type": "quantitative",
+          "axis": {
+            "grid": false,
+            "format": ".2s",
+            "offset": 10
+          }
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "xOffset": 3,
+        "width": {"band": 0.8},
+        "opacity": 0.75,
+        "fill": "",
+        "stroke": "#dbdb8d"
+      },
+      "encoding": {
+        "y": {
+          "field": "Budget",
+          "type": "quantitative"
+        },
+        "strokeWidth": {"value": 2.5}
+      }
+    },
+    {
+      "encoding": {
+        "y": {
+          "field": "Expenses",
+          "type": "quantitative"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "tooltip": true,
+            "width": {"band": 0.18},
+            "xOffset": 21,
+            "color": {
+              "expr": "datum['Expenses'] < datum['Budget'] ?               '#e6ab02' : '#666666'"
+            }
+          },
+          "encoding": {
+            "y": {
+              "field": "Expenses",
+              "type": "quantitative"
+            },
+            "y2": {"field": "Budget"}
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "size": 100,
+            "opacity": 1,
+            "xOffset": 21,
+            "color": {
+              "expr": "datum['Expenses'] < datum['Budget'] ?               '#e6ab02' : '#666666'"
+            }
+          },
+          "encoding": {
+            "y": {"field": "Budget"}
+          }
+        }
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Month",
+      "sort": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Oct",
+        "Dec"
+      ],
+      "scale": {"padding": 0.4}
+    },
+    "tooltip": [
+      {
+        "field": "Month",
+        "type": "nominal",
+        "title": "Month:"
+      },
+      {
+        "field": "Expenses",
+        "type": "quantitative",
+        "format": "$",
+        "title": "Expenses:"
+      },
+      {
+        "field": "Budget",
+        "type": "quantitative",
+        "format": "$",
+        "title": "Budget:"
+      },
+      {
+        "field": "abs_diff",
+        "type": "quantitative",
+        "format": "$",
+        "title": "Variance:"
+      }
+    ]
+  }
+}
