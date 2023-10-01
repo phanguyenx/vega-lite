@@ -1,0 +1,141 @@
+{
+  "data": {
+    "values": [
+      {"Month": "Jan", "Expenses": 735, "Budget": 812},
+      {"Month": "Feb", "Expenses": 724, "Budget": 601},
+      {"Month": "Mar", "Expenses": 1365, "Budget": 945},
+      {"Month": "Apr", "Expenses": 1316, "Budget": 1016},
+      {"Month": "May", "Expenses": 720, "Budget": 842},
+      {"Month": "Jun", "Expenses": 1139, "Budget": 1102},
+      {"Month": "Jul", "Expenses": 1380, "Budget": 1230},
+      {"Month": "Aug", "Expenses": 1219, "Budget": 1002},
+      {"Month": "Sep", "Expenses": 1735, "Budget": 1416},
+      {"Month": "Oct", "Expenses": 1482, "Budget": 1454},
+      {"Month": "Nov", "Expenses": 1345, "Budget": 1585},
+      {"Month": "Dec", "Expenses": 1568, "Budget": 1655}
+    ]
+  },
+  "title": {
+    "text": "Expenses Vs Budget",
+    "anchor": "middle",
+    "offset": 5,
+    "font": "Tahoma",
+    "fontSize": 20
+  },
+  "width": 650,
+  "height": 350,
+  "transform": [
+    {"calculate": "datum['Expenses'] - datum['Budget']", "as": "abs_diff"},
+    {
+      "calculate": "(datum['Expenses'] - datum['Budget'])/datum['Budget']",
+      "as": "rel_diff"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "xOffset": -5,
+        "width": {"band": 0.8},
+        "color": "#386cb0",
+        "opacity": 0.75
+      },
+      "encoding": {
+        "y": {
+          "field": "Expenses",
+          "type": "quantitative",
+          "axis": {"grid": false, "format": ".2s", "offset": 10}
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "xOffset": 3,
+        "width": {"band": 0.8},
+        "opacity": 0.75,
+        "fill": "",
+        "stroke": "#dbdb8d"
+      },
+      "encoding": {
+        "y": {"field": "Budget", "type": "quantitative"},
+        "strokeWidth": {"value": 2.5}
+      }
+    },
+    {
+      "encoding": {"y": {"field": "Expenses", "type": "quantitative"}},
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "tooltip": true,
+            "width": {"band": 0.18},
+            "xOffset": 21,
+            "color": {
+              "expr": "datum['Expenses'] < datum['Budget'] ?               '#e6ab02' : '#666666'"
+            }
+          },
+          "encoding": {
+            "y": {"field": "Expenses", "type": "quantitative"},
+            "y2": {"field": "Budget"}
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "filled": true,
+            "size": 100,
+            "opacity": 1,
+            "xOffset": 21,
+            "color": {
+              "expr": "datum['Expenses'] < datum['Budget'] ?               '#e6ab02' : '#666666'"
+            }
+          },
+          "encoding": {"y": {"field": "Budget"}}
+        }
+      ]
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "Month",
+      "sort": [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Nov",
+        "Oct",
+        "Dec"
+      ],
+      "scale": {"padding": 0.4}
+    },
+    "tooltip": [
+      {"field": "Month", "type": "nominal", "title": "Month:"},
+      {
+        "field": "Expenses",
+        "type": "quantitative",
+        "format": "$",
+        "title": "Expenses:"
+      },
+      {
+        "field": "Budget",
+        "type": "quantitative",
+        "format": "$",
+        "title": "Budget:"
+      },
+      {
+        "field": "abs_diff",
+        "type": "quantitative",
+        "format": "$",
+        "title": "Variance:"
+      }
+    ]
+  },
+  "config": {}
+}
