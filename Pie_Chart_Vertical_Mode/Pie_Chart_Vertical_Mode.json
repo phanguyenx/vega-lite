@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "usermeta": {
+    "deneb": {
+      "build": "1.6.0.2",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "5.16.1"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": false,
+      "highlight": false,
+      "dataPointLimit": 50
+    },
+    "information": {
+      "name": "Pie Chart: Vertical Mode",
+      "description": "[No Description Provided]",
+      "author": "Pha Nguyen",
+      "uuid": "31cda316-725d-43f1-856a-ab8af9477ab0",
+      "generated": "2023-11-11T09:54:36.723Z",
+      "previewImageBase64PNG": "data:image/png;base64,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"
+    },
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Index",
+        "description": "",
+        "type": "text",
+        "kind": "column"
+      }
+    ]
+  },
+  "config": {
+    "autosize": {"contains": "padding"},
+    "background": "#F7F7F7",
+    "axis": {
+      "domain": false,
+      "ticks": false,
+      "title": true,
+      "grid": false,
+      "labelAngle": 0
+    },
+    "view": {"stroke": "transparent"}
+  },
+  "data": {
+    "values": [
+      {
+        "Region": "Segment1",
+        "value": 5
+      },
+      {
+        "Region": "Segment2",
+        "value": 10
+      },
+      {
+        "Region": "Segment3",
+        "value": 15
+      },
+      {
+        "Region": "Segment4",
+        "value": 20
+      }
+    ]
+  },
+  "transform": [
+    {
+      "joinaggregate": [
+        {
+          "op": "sum",
+          "field": "value",
+          "as": "total"
+        }
+      ]
+    }
+  ],
+  "facet": {
+    "field": "Region",
+    "title": "",
+    "header": {
+      "labelAngle": 0,
+      "labelAnchor": "start",
+      "labelBaseline": "line-bottom",
+      "labelLineHeight": 85,
+      "labelOrient": "left",
+      "labelFontSize": 14,
+      "labelPadding": -15
+    }
+  },
+  "columns": 1,
+  "align": "each",
+  "spacing": 0,
+  "spec": {
+    "height": 100,
+    "width": 250,
+    "layer": [
+      {
+        "mark": {
+          "type": "arc",
+          "radius": 35,
+          "radius2": 38,
+          "padAngle": 0.03,
+          "cornerRadius": 3,
+          "color": "lightgrey"
+        },
+        "encoding": {
+          "theta": {
+            "field": "total",
+            "type": "quantitative"
+          }
+        }
+      },
+      {
+        "mark": {
+          "type": "arc",
+          "radius": 32
+        },
+        "encoding": {
+          "theta": {
+            "field": "value",
+            "type": "quantitative"
+          },
+          "color": {"field": "Region"}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "radius": 5,
+          "color": "black",
+          "fontSize": 20
+        },
+        "encoding": {
+          "text": {
+            "field": "value",
+            "type": "quantitative",
+            "aggregate": "sum"
+          },
+          "detail": {
+            "field": "Segment",
+            "type": "nominal"
+          }
+        }
+      }
+    ],
+    "view": {"stroke": null}
+  }
+}
