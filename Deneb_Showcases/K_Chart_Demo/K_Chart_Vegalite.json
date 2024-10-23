@@ -1,0 +1,391 @@
+{
+  "usermeta": {
+    "information": {
+      "uuid": "e588084d-c7f8-452b-931d-930f1f58de9b",
+      "generated": "2024-10-22T23:07:56.363Z",
+      "previewImageBase64PNG": "data:image/png;base64,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",
+      "name": "K Chart Demo with Deneb Vegalite",
+      "description": "[No Description Provided]",
+      "author": "Pha Nguyen"
+    },
+    "deneb": {
+      "build": "1.7.2.1",
+      "metaVersion": 1,
+      "provider": "vegaLite",
+      "providerVersion": "5.20.1"
+    },
+    "interactivity": {
+      "tooltip": true,
+      "contextMenu": true,
+      "selection": true,
+      "selectionMode": "simple",
+      "highlight": true,
+      "dataPointLimit": 50
+    },
+    "config": "{\n  \"width\": \"container\",\n  \"height\": \"container\",\n  \"autosize\": {\n    \"type\": \"fit\",\n    \"contains\": \"padding\",\n    \"resize\": true\n  },\n  \"view\": {\"stroke\": \"transparent\"},\n  \"font\": \"Segoe UI\",\n  \"arc\": {},\n  \"area\": {},\n  \"bar\": {},\n  \"line\": { },\n  \"path\": {},\n  \"point\": {\"filled\": true, \"size\": 75},\n  \"rect\": {},\n  \"shape\": {},\n  \"symbol\": { },\n  \"tick\": {\"width\": 60, \"height\": 5, \n      \"thickness\": 5,\n      \"bandSize\": 20\n    },\n  \"text\": {\n          \"font\": \"Segoe UI\",\n           \"fontSize\": 12,\n          \"fontWeight\": \"bold\"  },\n  \n  \"axis\": {\n    \"ticks\": false,\n    \"grid\": false,\n    \"domain\": false,\n    \"labelFlush\": false,\n    \"labelColor\": \"black\",\n    \"labelFontWeight\": \"bold\",\n    \"labelFontSize\": 13,\n    \"titleFont\": \"wf_standard-font, helvetica, arial, sans-serif\",\n    \"titleColor\": \"black\",\n    \"titleFontSize\": 16,\n    \"titleFontWeight\": \"bold\"\n  },\n  \n   \"axisQuantitative\": {\n     \"tickCount\": 5,\n    \"grid\": false,\n    \"gridDash\": [1, 5],\n    \"labelFlush\": true\n  },\n  \"axisX\": {\"labelPadding\": 5,\n            \"labelAngle\": 0 },\n  \"axisY\": {\"labelPadding\": 5\n  },\n  \"header\": {\n    \"titleFont\": \"wf_standard-font, helvetica, arial, sans-serif\",\n    \"titleFontSize\": 16,\n    \"labelFont\": \"Segoe UI\",\n    \"labelFontSize\": 13.333333333333332,\n    \"labelColor\": \"#605E5C\"\n  },\n  \"legend\": {\n    \"titleFont\": \"Segoe UI\",\n    \"titleFontWeight\": \"bold\",\n    \"labelFont\": \"Segoe UI\",\n    \"labelFontSize\": 13.333333333333332,\n    \"symbolType\": \"circle\",\n    \"symbolSize\": 75\n  }\n}",
+    "dataset": [
+      {
+        "key": "__0__",
+        "name": "Sub-Category",
+        "description": "",
+        "kind": "column",
+        "type": "text"
+      },
+      {
+        "key": "__1__",
+        "name": "Quantity",
+        "description": "",
+        "kind": "measure",
+        "type": "numeric"
+      },
+      {
+        "key": "__2__",
+        "name": "%GT Quantity",
+        "description": "",
+        "kind": "measure",
+        "type": "numeric"
+      },
+      {
+        "key": "__3__",
+        "name": "Cumulative Percentage (Pareto_Rule_Quantity)",
+        "description": "you have to create a cumulative percentage measure",
+        "kind": "measure",
+        "type": "numeric"
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "name": "dataset"
+  },
+  "description": "K Chart Demo by Pha Nguyen : https://www.linkedin.com/in/pha-nguyen-1528594/",
+  "Project": "Deneb Vegalite Templates by Pha Nguyen",
+  "Github": "https://github.com/phanguyenx/vega-lite",
+  "spacing": 0,
+  "bounds": "flush",
+  "hconcat": [
+    {
+      "width": 1060,
+      "height": 600,
+      "encoding": {
+        "x": {
+          "field": "__0__",
+          "type": "nominal",
+          "sort": {
+            "field": "__1__",
+            "order": "descending"
+          }
+        },
+        "y": {
+          "field": "__1__",
+          "type": "quantitative",
+          "title": "__1__"
+        },
+        "y2": {
+          "field": "__3__",
+          "type": "quantitative"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "tooltip": true,
+            "color": "#a89a84"
+          }
+        },
+        {
+          "mark": {
+            "type": "tick",
+            "tooltip": true
+          },
+          "encoding": {
+            "x": {
+              "field": "__0__",
+              "type": "nominal",
+              "title": "",
+              "sort": {
+                "field": "__1__",
+                "order": "descending"
+              }
+            },
+            "y": {
+              "field": "__1__",
+              "type": "quantitative",
+              "axis": null
+            },
+            "color": {
+              "field": "__2__",
+              "type": "quantitative",
+              "scale": {
+                "scheme": "pastel1",
+                "reverse": true
+              }
+            },
+            "opacity": {
+              "condition": {
+                "test": {
+                  "field": "__selected__",
+                  "equal": "off"
+                },
+                "value": 0.3
+              },
+              "value": 1
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "xOffset": 0,
+            "yOffset": 10,
+            "font": "Segoe UI",
+            "fontSize": 13,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "text": {
+              "field": "__1__",
+              "type": "quantitative",
+              "format": ".3s"
+            },
+            "x": {
+              "field": "__0__",
+              "type": "nominal",
+              "title": "",
+              "sort": {
+                "field": "__1__",
+                "order": "descending"
+              }
+            },
+            "y": {
+              "field": "__1__",
+              "type": "quantitative",
+              "axis": null
+            },
+            "color": {
+              "value": "lightgrey"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "calculate": "datum['__3__'] - datum['__2__']",
+              "as": "start"
+            }
+          ],
+          "layer": [
+            {
+              "mark": {
+                "type": "bar",
+                "tooltip": false
+              },
+              "encoding": {
+                "x": {
+                  "field": "__0__",
+                  "type": "nominal",
+                  "title": "",
+                  "sort": {
+                    "field": "__1__",
+                    "order": "descending"
+                  }
+                },
+                "y": {
+                  "field": "start",
+                  "type": "quantitative",
+                  "axis": null
+                },
+                "color": {
+                  "field": "__2__",
+                  "type": "quantitative",
+                  "scale": {
+                    "scheme": "category20c",
+                    "reverse": true
+                  }
+                },
+                "opacity": {
+                  "condition": {
+                    "test": {
+                      "field": "__selected__",
+                      "equal": "off"
+                    },
+                    "value": 0.3
+                  },
+                  "value": 0.75
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "align": "center",
+                "xOffset": 0,
+                "yOffset": -10,
+                "font": "Segoe UI",
+                "fontSize": 13,
+                "fontWeight": "bold"
+              },
+              "encoding": {
+                "text": {
+                  "field": "__2__",
+                  "type": "quantitative",
+                  "format": ".1%"
+                },
+                "x": {
+                  "field": "__0__",
+                  "type": "nominal",
+                  "title": "",
+                  "sort": {
+                    "field": "__1__",
+                    "order": "descending"
+                  }
+                },
+                "y": {
+                  "field": "__3__",
+                  "type": "quantitative"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "resolve": {
+        "scale": {
+          "y": "independent"
+        }
+      }
+    },
+    {
+      "width": 140,
+      "height": 600,
+      "transform": [
+        {
+          "joinaggregate": [
+            {
+              "op": "sum",
+              "field": "__0__",
+              "as": "Category"
+            }
+          ]
+        },
+        {
+          "calculate": "format(datum['__2__'], '.1%')",
+          "as": "perc_total"
+        },
+        {
+          "calculate": "datum['__0__']+' : '  +datum['perc_total']",
+          "as": "CategoryPercentText"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "aggregate": "sum",
+          "field": "__2__",
+          "type": "quantitative",
+          "stack": "normalize",
+          "title": "",
+          "axis": null
+        },
+        "order": {
+          "field": "__2__",
+          "sort": "descending"
+        },
+        "x": {
+          "field": "Category",
+          "type": "ordinal",
+          "title": "",
+          "axis": null
+        },
+        "color": {
+          "field": "__2__",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "category20c",
+            "reverse": true
+          },
+          "sort": {
+            "field": "__2__",
+            "order": "descending"
+          },
+          "legend": null
+        },
+        "opacity": {
+          "condition": {
+            "test": {
+              "field": "__selected__",
+              "equal": "off"
+            },
+            "value": 0.3
+          },
+          "value": 1
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "bar",
+            "stroke": "white",
+            "strokeWidth": 0.75,
+            "tooltip": false
+          },
+          "encoding": {
+            "y": {
+              "aggregate": "sum",
+              "field": "__2__",
+              "type": "quantitative",
+              "stack": "normalize",
+              "title": "",
+              "axis": null
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": {
+                "field": "__0__",
+                "oneOf": [
+                  "Supplies",
+                  "Bookcases",
+                  "Envelopes",
+                  "Fasteners",
+                  "Tables",
+                  "Labels",
+                  "Appliances",
+                  "Chairs",
+                  "Accessories",
+                  "Art",
+                  "Storage",
+                  "Phones",
+                  "Furnishings",
+                  "Paper",
+                  "Binders"
+                ]
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "dx": 3,
+            "dy": 18,
+            "angle": 0,
+            "font": "Segoe UI",
+            "fontSize": 12,
+            "fontWeight": "bold"
+          },
+          "encoding": {
+            "color": {
+              "value": "grey"
+            },
+            "text": {
+              "field": "CategoryPercentText",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
